@@ -13,6 +13,13 @@ public class Studente implements Serializable {
 		this.voto = voto;
 	}
 
+	public Studente(Studente s) {
+		this.nome = s.nome;
+		this.cognome = s.cognome;
+		this.classe = s.classe;
+		this.voto = s.voto;
+	}
+
 	public String getNome() {
 		return nome;
 	}
